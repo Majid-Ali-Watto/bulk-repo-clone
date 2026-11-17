@@ -38,28 +38,28 @@ ssh-keyscan -H github.com >> ~/.ssh/known_hosts
 Use HTTPS URLs:
 
 ```bash
-cd ~/Documents/bulk-clones
+cd ~/Documents/bulk-repo-clones
 URL_TYPE=https ./clone_all.sh
 ```
 
 Use SSH URLs:
 
 ```bash
-cd ~/Documents/bulk-clones
+cd ~/Documents/bulk-repo-clones
 URL_TYPE=ssh ./clone_all.sh
 ```
 
 Use a custom concurrency level:
 
 ```bash
-cd ~/Documents/bulk-clones
+cd ~/Documents/bulk-repo-clones
 URL_TYPE=https CONCURRENCY=8 ./clone_all.sh
 ```
 
 You can also set concurrency with SSH URLs or lower/higher values depending on your machine:
 
 ```bash
-cd ~/Documents/bulk-clones
+cd ~/Documents/bulk-repo-clones
 URL_TYPE=ssh CONCURRENCY=4 ./clone_all.sh
 URL_TYPE=https CONCURRENCY=12 ./clone_all.sh
 ```
